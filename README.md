@@ -8,13 +8,13 @@ We apply a Dirichlet-multinomial regression to mutation count data to capture th
 - **Variants from population genetic studies** <br>
 We use human variants from the 1000 Genomes Project with allele ages estimated from the Genealogical Estimation of Variant Age (GEVA) approach.
 
-## Summary of analysis workflow:
+## Summary of analysis workflow
 1. Preprocess 1000 Genomes variant data with ages from GEVA
 2. Count binned variants, including for each continental population
 3. Load mutation data and build Dirichlet-multinomial model
 4. Estimate best-fit parental ages for variant spectrum in each bin
 
-## Brief descriptions for folders and files in top-level of repository:
+## Brief descriptions for folders and files in top-level of repository
 ### folders
 - bootstraps/<br>
 Recalculate estimates for each 100x100 double-bootstrap of model and variants
