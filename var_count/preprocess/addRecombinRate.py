@@ -33,11 +33,11 @@ idx = 0
 rcount = 0
 for i, row in genmap.iterrows():
     for i, pos in enumerate(data['Position'][idx:]):
-        rcount += 1
         if pos >= row[4] and pos <= row[1]:
+            rcount += 1
             Rec_Rate.append(row[2])
         else:
-            idx = rcount+1
+            idx = rcount
             break
 
 rate = pd.DataFrame(data=np.array(Rec_Rate), columns=['Rate'])
