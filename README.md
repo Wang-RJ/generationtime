@@ -24,6 +24,8 @@ Reanalysis masking genomic tracts with potential Neanderthal introgression
 Reanalysis after drawing new allele ages based on 95% CI from GEVA
 - var_count/<br>
 Preprocess variant data, bin variants, and count each mutation class
+- model_coefficients/<br>
+RData object for spectrum prediction model and coefficients from this model as plain-text
 ### files
 * age_modeling.R<br>
 Loads mutation data and builds the probabilistic model for estimating parental ages
